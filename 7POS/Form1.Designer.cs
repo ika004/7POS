@@ -47,11 +47,45 @@
             sekiname = new Label();
             sekininbox = new PictureBox();
             sekinum = new TextBox();
-            graphno = new Label();
+            graphno1 = new Label();
             no1syouhin = new Label();
-            no1tanka = new Label();
             no1kazu = new Label();
+            label1 = new Label();
+            barcodeno = new TextBox();
+            goukeilabel = new Label();
             no1kingaku = new Label();
+            no1tanka = new Label();
+            goukeitext = new TextBox();
+            no2kingaku = new Label();
+            no2kazu = new Label();
+            no2tanka = new Label();
+            no2syouhin = new Label();
+            graphno2 = new Label();
+            no3kingaku = new Label();
+            no3kazu = new Label();
+            no3tanka = new Label();
+            no3syouhin = new Label();
+            graphno3 = new Label();
+            no4kingaku = new Label();
+            no4kazu = new Label();
+            no4tanka = new Label();
+            no4syouhin = new Label();
+            graphno4 = new Label();
+            no5kingaku = new Label();
+            no5kazu = new Label();
+            no5tanka = new Label();
+            no5syouhin = new Label();
+            graphno5 = new Label();
+            no6kingaku = new Label();
+            no6kazu = new Label();
+            no6tanka = new Label();
+            no6syouhin = new Label();
+            graphno6 = new Label();
+            no7kingaku = new Label();
+            no7kazu = new Label();
+            no7tanka = new Label();
+            no7syouhin = new Label();
+            graphno7 = new Label();
             ((System.ComponentModel.ISupportInitialize)b2seki).BeginInit();
             ((System.ComponentModel.ISupportInitialize)b2ryou).BeginInit();
             ((System.ComponentModel.ISupportInitialize)b2turi).BeginInit();
@@ -255,23 +289,24 @@
             // 
             sekinum.BorderStyle = BorderStyle.None;
             sekinum.Font = new Font("ＭＳ Ｐゴシック", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
-            sekinum.Location = new Point(527, 364);
+            sekinum.Location = new Point(529, 364);
             sekinum.Name = "sekinum";
             sekinum.RightToLeft = RightToLeft.Yes;
             sekinum.Size = new Size(398, 37);
             sekinum.TabIndex = 18;
             sekinum.KeyDown += sekinum_KeyDown;
             // 
-            // graphno
+            // graphno1
             // 
-            graphno.AutoSize = true;
-            graphno.BackColor = Color.Transparent;
-            graphno.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            graphno.Location = new Point(27, 139);
-            graphno.Name = "graphno";
-            graphno.Size = new Size(32, 34);
-            graphno.TabIndex = 19;
-            graphno.Text = "1";
+            graphno1.AutoSize = true;
+            graphno1.BackColor = Color.Transparent;
+            graphno1.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            graphno1.Location = new Point(27, 139);
+            graphno1.Name = "graphno1";
+            graphno1.Size = new Size(32, 34);
+            graphno1.TabIndex = 19;
+            graphno1.Text = "1";
+            graphno1.Visible = false;
             // 
             // no1syouhin
             // 
@@ -284,19 +319,7 @@
             no1syouhin.Size = new Size(72, 34);
             no1syouhin.TabIndex = 20;
             no1syouhin.Text = "test";
-            // 
-            // no1tanka
-            // 
-            no1tanka.AutoSize = true;
-            no1tanka.BackColor = Color.Transparent;
-            no1tanka.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            no1tanka.Location = new Point(509, 138);
-            no1tanka.Name = "no1tanka";
-            no1tanka.RightToLeft = RightToLeft.Yes;
-            no1tanka.Size = new Size(32, 34);
-            no1tanka.TabIndex = 21;
-            no1tanka.Text = "0";
-            no1tanka.TextAlign = ContentAlignment.MiddleCenter;
+            no1syouhin.Visible = false;
             // 
             // no1kazu
             // 
@@ -309,17 +332,494 @@
             no1kazu.Size = new Size(32, 34);
             no1kazu.TabIndex = 22;
             no1kazu.Text = "1";
+            no1kazu.Visible = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(887, 686);
+            label1.Name = "label1";
+            label1.Size = new Size(55, 15);
+            label1.TabIndex = 24;
+            label1.Text = "デバッグ用";
+            // 
+            // barcodeno
+            // 
+            barcodeno.Location = new Point(887, 713);
+            barcodeno.Name = "barcodeno";
+            barcodeno.Size = new Size(127, 23);
+            barcodeno.TabIndex = 25;
+            barcodeno.KeyDown += barcodeno_KeyDown;
+            // 
+            // goukeilabel
+            // 
+            goukeilabel.AutoSize = true;
+            goukeilabel.BackColor = Color.Transparent;
+            goukeilabel.Font = new Font("MS UI Gothic", 24.75F, FontStyle.Regular, GraphicsUnit.Point);
+            goukeilabel.ForeColor = Color.ForestGreen;
+            goukeilabel.Location = new Point(396, 558);
+            goukeilabel.Name = "goukeilabel";
+            goukeilabel.Size = new Size(103, 33);
+            goukeilabel.TabIndex = 26;
+            goukeilabel.Text = "合　計";
             // 
             // no1kingaku
             // 
             no1kingaku.AutoSize = true;
             no1kingaku.BackColor = Color.Transparent;
             no1kingaku.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            no1kingaku.Location = new Point(735, 139);
+            no1kingaku.Location = new Point(725, 139);
+            no1kingaku.MaximumSize = new Size(132, 34);
+            no1kingaku.MinimumSize = new Size(132, 34);
             no1kingaku.Name = "no1kingaku";
-            no1kingaku.Size = new Size(32, 34);
+            no1kingaku.Size = new Size(132, 34);
             no1kingaku.TabIndex = 23;
             no1kingaku.Text = "0";
+            no1kingaku.TextAlign = ContentAlignment.MiddleCenter;
+            no1kingaku.Visible = false;
+            // 
+            // no1tanka
+            // 
+            no1tanka.AutoSize = true;
+            no1tanka.BackColor = Color.Transparent;
+            no1tanka.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no1tanka.Location = new Point(488, 139);
+            no1tanka.MaximumSize = new Size(126, 38);
+            no1tanka.MinimumSize = new Size(126, 38);
+            no1tanka.Name = "no1tanka";
+            no1tanka.RightToLeft = RightToLeft.Yes;
+            no1tanka.Size = new Size(126, 38);
+            no1tanka.TabIndex = 21;
+            no1tanka.Text = "0";
+            no1tanka.TextAlign = ContentAlignment.MiddleCenter;
+            no1tanka.Visible = false;
+            // 
+            // goukeitext
+            // 
+            goukeitext.BackColor = SystemColors.ButtonFace;
+            goukeitext.BorderStyle = BorderStyle.None;
+            goukeitext.Font = new Font("MS UI Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            goukeitext.Location = new Point(396, 550);
+            goukeitext.Name = "goukeitext";
+            goukeitext.ReadOnly = true;
+            goukeitext.Size = new Size(482, 48);
+            goukeitext.TabIndex = 27;
+            goukeitext.TabStop = false;
+            goukeitext.TextAlign = HorizontalAlignment.Right;
+            // 
+            // no2kingaku
+            // 
+            no2kingaku.AutoSize = true;
+            no2kingaku.BackColor = Color.Transparent;
+            no2kingaku.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no2kingaku.Location = new Point(725, 190);
+            no2kingaku.MaximumSize = new Size(132, 34);
+            no2kingaku.MinimumSize = new Size(132, 34);
+            no2kingaku.Name = "no2kingaku";
+            no2kingaku.Size = new Size(132, 34);
+            no2kingaku.TabIndex = 32;
+            no2kingaku.Text = "0";
+            no2kingaku.TextAlign = ContentAlignment.MiddleCenter;
+            no2kingaku.Visible = false;
+            // 
+            // no2kazu
+            // 
+            no2kazu.AutoSize = true;
+            no2kazu.BackColor = Color.Transparent;
+            no2kazu.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no2kazu.Location = new Point(640, 190);
+            no2kazu.Name = "no2kazu";
+            no2kazu.RightToLeft = RightToLeft.Yes;
+            no2kazu.Size = new Size(32, 34);
+            no2kazu.TabIndex = 31;
+            no2kazu.Text = "1";
+            no2kazu.Visible = false;
+            // 
+            // no2tanka
+            // 
+            no2tanka.AutoSize = true;
+            no2tanka.BackColor = Color.Transparent;
+            no2tanka.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no2tanka.Location = new Point(488, 190);
+            no2tanka.MaximumSize = new Size(126, 38);
+            no2tanka.MinimumSize = new Size(126, 38);
+            no2tanka.Name = "no2tanka";
+            no2tanka.RightToLeft = RightToLeft.Yes;
+            no2tanka.Size = new Size(126, 38);
+            no2tanka.TabIndex = 30;
+            no2tanka.Text = "0";
+            no2tanka.TextAlign = ContentAlignment.MiddleCenter;
+            no2tanka.Visible = false;
+            // 
+            // no2syouhin
+            // 
+            no2syouhin.AutoSize = true;
+            no2syouhin.BackColor = Color.Transparent;
+            no2syouhin.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no2syouhin.Location = new Point(95, 190);
+            no2syouhin.Name = "no2syouhin";
+            no2syouhin.RightToLeft = RightToLeft.Yes;
+            no2syouhin.Size = new Size(72, 34);
+            no2syouhin.TabIndex = 29;
+            no2syouhin.Text = "test";
+            no2syouhin.Visible = false;
+            // 
+            // graphno2
+            // 
+            graphno2.AutoSize = true;
+            graphno2.BackColor = Color.Transparent;
+            graphno2.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            graphno2.Location = new Point(27, 190);
+            graphno2.Name = "graphno2";
+            graphno2.Size = new Size(32, 34);
+            graphno2.TabIndex = 28;
+            graphno2.Text = "2";
+            graphno2.Visible = false;
+            // 
+            // no3kingaku
+            // 
+            no3kingaku.AutoSize = true;
+            no3kingaku.BackColor = Color.Transparent;
+            no3kingaku.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no3kingaku.Location = new Point(725, 236);
+            no3kingaku.MaximumSize = new Size(132, 34);
+            no3kingaku.MinimumSize = new Size(132, 34);
+            no3kingaku.Name = "no3kingaku";
+            no3kingaku.Size = new Size(132, 34);
+            no3kingaku.TabIndex = 37;
+            no3kingaku.Text = "0";
+            no3kingaku.TextAlign = ContentAlignment.MiddleCenter;
+            no3kingaku.Visible = false;
+            // 
+            // no3kazu
+            // 
+            no3kazu.AutoSize = true;
+            no3kazu.BackColor = Color.Transparent;
+            no3kazu.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no3kazu.Location = new Point(640, 236);
+            no3kazu.Name = "no3kazu";
+            no3kazu.RightToLeft = RightToLeft.Yes;
+            no3kazu.Size = new Size(32, 34);
+            no3kazu.TabIndex = 36;
+            no3kazu.Text = "1";
+            no3kazu.Visible = false;
+            // 
+            // no3tanka
+            // 
+            no3tanka.AutoSize = true;
+            no3tanka.BackColor = Color.Transparent;
+            no3tanka.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no3tanka.Location = new Point(488, 236);
+            no3tanka.MaximumSize = new Size(126, 38);
+            no3tanka.MinimumSize = new Size(126, 38);
+            no3tanka.Name = "no3tanka";
+            no3tanka.RightToLeft = RightToLeft.Yes;
+            no3tanka.Size = new Size(126, 38);
+            no3tanka.TabIndex = 35;
+            no3tanka.Text = "0";
+            no3tanka.TextAlign = ContentAlignment.MiddleCenter;
+            no3tanka.Visible = false;
+            // 
+            // no3syouhin
+            // 
+            no3syouhin.AutoSize = true;
+            no3syouhin.BackColor = Color.Transparent;
+            no3syouhin.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no3syouhin.Location = new Point(95, 236);
+            no3syouhin.Name = "no3syouhin";
+            no3syouhin.RightToLeft = RightToLeft.Yes;
+            no3syouhin.Size = new Size(72, 34);
+            no3syouhin.TabIndex = 34;
+            no3syouhin.Text = "test";
+            no3syouhin.Visible = false;
+            // 
+            // graphno3
+            // 
+            graphno3.AutoSize = true;
+            graphno3.BackColor = Color.Transparent;
+            graphno3.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            graphno3.Location = new Point(27, 236);
+            graphno3.Name = "graphno3";
+            graphno3.Size = new Size(32, 34);
+            graphno3.TabIndex = 33;
+            graphno3.Text = "3";
+            graphno3.Visible = false;
+            // 
+            // no4kingaku
+            // 
+            no4kingaku.AutoSize = true;
+            no4kingaku.BackColor = Color.Transparent;
+            no4kingaku.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no4kingaku.Location = new Point(725, 289);
+            no4kingaku.MaximumSize = new Size(132, 34);
+            no4kingaku.MinimumSize = new Size(132, 34);
+            no4kingaku.Name = "no4kingaku";
+            no4kingaku.Size = new Size(132, 34);
+            no4kingaku.TabIndex = 42;
+            no4kingaku.Text = "0";
+            no4kingaku.TextAlign = ContentAlignment.MiddleCenter;
+            no4kingaku.Visible = false;
+            // 
+            // no4kazu
+            // 
+            no4kazu.AutoSize = true;
+            no4kazu.BackColor = Color.Transparent;
+            no4kazu.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no4kazu.Location = new Point(640, 289);
+            no4kazu.Name = "no4kazu";
+            no4kazu.RightToLeft = RightToLeft.Yes;
+            no4kazu.Size = new Size(32, 34);
+            no4kazu.TabIndex = 41;
+            no4kazu.Text = "1";
+            no4kazu.Visible = false;
+            // 
+            // no4tanka
+            // 
+            no4tanka.AutoSize = true;
+            no4tanka.BackColor = Color.Transparent;
+            no4tanka.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no4tanka.Location = new Point(488, 289);
+            no4tanka.MaximumSize = new Size(126, 38);
+            no4tanka.MinimumSize = new Size(126, 38);
+            no4tanka.Name = "no4tanka";
+            no4tanka.RightToLeft = RightToLeft.Yes;
+            no4tanka.Size = new Size(126, 38);
+            no4tanka.TabIndex = 40;
+            no4tanka.Text = "0";
+            no4tanka.TextAlign = ContentAlignment.MiddleCenter;
+            no4tanka.Visible = false;
+            // 
+            // no4syouhin
+            // 
+            no4syouhin.AutoSize = true;
+            no4syouhin.BackColor = Color.Transparent;
+            no4syouhin.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no4syouhin.Location = new Point(95, 289);
+            no4syouhin.Name = "no4syouhin";
+            no4syouhin.RightToLeft = RightToLeft.Yes;
+            no4syouhin.Size = new Size(72, 34);
+            no4syouhin.TabIndex = 39;
+            no4syouhin.Text = "test";
+            no4syouhin.Visible = false;
+            // 
+            // graphno4
+            // 
+            graphno4.AutoSize = true;
+            graphno4.BackColor = Color.Transparent;
+            graphno4.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            graphno4.Location = new Point(27, 289);
+            graphno4.Name = "graphno4";
+            graphno4.Size = new Size(32, 34);
+            graphno4.TabIndex = 38;
+            graphno4.Text = "4";
+            graphno4.Visible = false;
+            // 
+            // no5kingaku
+            // 
+            no5kingaku.AutoSize = true;
+            no5kingaku.BackColor = Color.Transparent;
+            no5kingaku.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no5kingaku.Location = new Point(725, 338);
+            no5kingaku.MaximumSize = new Size(132, 34);
+            no5kingaku.MinimumSize = new Size(132, 34);
+            no5kingaku.Name = "no5kingaku";
+            no5kingaku.Size = new Size(132, 34);
+            no5kingaku.TabIndex = 47;
+            no5kingaku.Text = "0";
+            no5kingaku.TextAlign = ContentAlignment.MiddleCenter;
+            no5kingaku.Visible = false;
+            // 
+            // no5kazu
+            // 
+            no5kazu.AutoSize = true;
+            no5kazu.BackColor = Color.Transparent;
+            no5kazu.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no5kazu.Location = new Point(640, 338);
+            no5kazu.Name = "no5kazu";
+            no5kazu.RightToLeft = RightToLeft.Yes;
+            no5kazu.Size = new Size(32, 34);
+            no5kazu.TabIndex = 46;
+            no5kazu.Text = "1";
+            no5kazu.Visible = false;
+            // 
+            // no5tanka
+            // 
+            no5tanka.AutoSize = true;
+            no5tanka.BackColor = Color.Transparent;
+            no5tanka.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no5tanka.Location = new Point(488, 338);
+            no5tanka.MaximumSize = new Size(126, 38);
+            no5tanka.MinimumSize = new Size(126, 38);
+            no5tanka.Name = "no5tanka";
+            no5tanka.RightToLeft = RightToLeft.Yes;
+            no5tanka.Size = new Size(126, 38);
+            no5tanka.TabIndex = 45;
+            no5tanka.Text = "0";
+            no5tanka.TextAlign = ContentAlignment.MiddleCenter;
+            no5tanka.Visible = false;
+            // 
+            // no5syouhin
+            // 
+            no5syouhin.AutoSize = true;
+            no5syouhin.BackColor = Color.Transparent;
+            no5syouhin.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no5syouhin.Location = new Point(95, 338);
+            no5syouhin.Name = "no5syouhin";
+            no5syouhin.RightToLeft = RightToLeft.Yes;
+            no5syouhin.Size = new Size(72, 34);
+            no5syouhin.TabIndex = 44;
+            no5syouhin.Text = "test";
+            no5syouhin.Visible = false;
+            // 
+            // graphno5
+            // 
+            graphno5.AutoSize = true;
+            graphno5.BackColor = Color.Transparent;
+            graphno5.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            graphno5.Location = new Point(27, 338);
+            graphno5.Name = "graphno5";
+            graphno5.Size = new Size(32, 34);
+            graphno5.TabIndex = 43;
+            graphno5.Text = "5";
+            graphno5.Visible = false;
+            // 
+            // no6kingaku
+            // 
+            no6kingaku.AutoSize = true;
+            no6kingaku.BackColor = Color.Transparent;
+            no6kingaku.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no6kingaku.Location = new Point(725, 386);
+            no6kingaku.MaximumSize = new Size(132, 34);
+            no6kingaku.MinimumSize = new Size(132, 34);
+            no6kingaku.Name = "no6kingaku";
+            no6kingaku.Size = new Size(132, 34);
+            no6kingaku.TabIndex = 52;
+            no6kingaku.Text = "0";
+            no6kingaku.TextAlign = ContentAlignment.MiddleCenter;
+            no6kingaku.Visible = false;
+            // 
+            // no6kazu
+            // 
+            no6kazu.AutoSize = true;
+            no6kazu.BackColor = Color.Transparent;
+            no6kazu.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no6kazu.Location = new Point(640, 386);
+            no6kazu.Name = "no6kazu";
+            no6kazu.RightToLeft = RightToLeft.Yes;
+            no6kazu.Size = new Size(32, 34);
+            no6kazu.TabIndex = 51;
+            no6kazu.Text = "1";
+            no6kazu.Visible = false;
+            // 
+            // no6tanka
+            // 
+            no6tanka.AutoSize = true;
+            no6tanka.BackColor = Color.Transparent;
+            no6tanka.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no6tanka.Location = new Point(488, 386);
+            no6tanka.MaximumSize = new Size(126, 38);
+            no6tanka.MinimumSize = new Size(126, 38);
+            no6tanka.Name = "no6tanka";
+            no6tanka.RightToLeft = RightToLeft.Yes;
+            no6tanka.Size = new Size(126, 38);
+            no6tanka.TabIndex = 50;
+            no6tanka.Text = "0";
+            no6tanka.TextAlign = ContentAlignment.MiddleCenter;
+            no6tanka.Visible = false;
+            // 
+            // no6syouhin
+            // 
+            no6syouhin.AutoSize = true;
+            no6syouhin.BackColor = Color.Transparent;
+            no6syouhin.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no6syouhin.Location = new Point(95, 386);
+            no6syouhin.Name = "no6syouhin";
+            no6syouhin.RightToLeft = RightToLeft.Yes;
+            no6syouhin.Size = new Size(72, 34);
+            no6syouhin.TabIndex = 49;
+            no6syouhin.Text = "test";
+            no6syouhin.Visible = false;
+            // 
+            // graphno6
+            // 
+            graphno6.AutoSize = true;
+            graphno6.BackColor = Color.Transparent;
+            graphno6.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            graphno6.Location = new Point(27, 386);
+            graphno6.Name = "graphno6";
+            graphno6.Size = new Size(32, 34);
+            graphno6.TabIndex = 48;
+            graphno6.Text = "6";
+            graphno6.Visible = false;
+            // 
+            // no7kingaku
+            // 
+            no7kingaku.AutoSize = true;
+            no7kingaku.BackColor = Color.Transparent;
+            no7kingaku.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no7kingaku.Location = new Point(725, 435);
+            no7kingaku.MaximumSize = new Size(132, 34);
+            no7kingaku.MinimumSize = new Size(132, 34);
+            no7kingaku.Name = "no7kingaku";
+            no7kingaku.Size = new Size(132, 34);
+            no7kingaku.TabIndex = 57;
+            no7kingaku.Text = "0";
+            no7kingaku.TextAlign = ContentAlignment.MiddleCenter;
+            no7kingaku.Visible = false;
+            // 
+            // no7kazu
+            // 
+            no7kazu.AutoSize = true;
+            no7kazu.BackColor = Color.Transparent;
+            no7kazu.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no7kazu.Location = new Point(640, 435);
+            no7kazu.Name = "no7kazu";
+            no7kazu.RightToLeft = RightToLeft.Yes;
+            no7kazu.Size = new Size(32, 34);
+            no7kazu.TabIndex = 56;
+            no7kazu.Text = "1";
+            no7kazu.Visible = false;
+            // 
+            // no7tanka
+            // 
+            no7tanka.AutoSize = true;
+            no7tanka.BackColor = Color.Transparent;
+            no7tanka.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no7tanka.Location = new Point(488, 435);
+            no7tanka.MaximumSize = new Size(126, 38);
+            no7tanka.MinimumSize = new Size(126, 38);
+            no7tanka.Name = "no7tanka";
+            no7tanka.RightToLeft = RightToLeft.Yes;
+            no7tanka.Size = new Size(126, 38);
+            no7tanka.TabIndex = 55;
+            no7tanka.Text = "0";
+            no7tanka.TextAlign = ContentAlignment.MiddleCenter;
+            no7tanka.Visible = false;
+            // 
+            // no7syouhin
+            // 
+            no7syouhin.AutoSize = true;
+            no7syouhin.BackColor = Color.Transparent;
+            no7syouhin.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            no7syouhin.Location = new Point(95, 435);
+            no7syouhin.Name = "no7syouhin";
+            no7syouhin.RightToLeft = RightToLeft.Yes;
+            no7syouhin.Size = new Size(72, 34);
+            no7syouhin.TabIndex = 54;
+            no7syouhin.Text = "test";
+            no7syouhin.Visible = false;
+            // 
+            // graphno7
+            // 
+            graphno7.AutoSize = true;
+            graphno7.BackColor = Color.Transparent;
+            graphno7.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
+            graphno7.Location = new Point(27, 435);
+            graphno7.Name = "graphno7";
+            graphno7.Size = new Size(32, 34);
+            graphno7.TabIndex = 53;
+            graphno7.Text = "7";
+            graphno7.Visible = false;
             // 
             // Form1
             // 
@@ -329,13 +829,42 @@
             BackgroundImage = Properties.Resources.MainScreen4;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1802, 765);
+            Controls.Add(sekinum);
+            Controls.Add(sekininbox);
+            Controls.Add(no7kingaku);
+            Controls.Add(no7kazu);
+            Controls.Add(no7tanka);
+            Controls.Add(no7syouhin);
+            Controls.Add(graphno7);
+            Controls.Add(no6kingaku);
+            Controls.Add(no6kazu);
+            Controls.Add(no6tanka);
+            Controls.Add(no6syouhin);
+            Controls.Add(graphno6);
+            Controls.Add(no4kingaku);
+            Controls.Add(no4kazu);
+            Controls.Add(no4tanka);
+            Controls.Add(no4syouhin);
+            Controls.Add(graphno4);
+            Controls.Add(no3kingaku);
+            Controls.Add(no3kazu);
+            Controls.Add(no3tanka);
+            Controls.Add(no3syouhin);
+            Controls.Add(graphno3);
+            Controls.Add(no2kingaku);
+            Controls.Add(no2kazu);
+            Controls.Add(no2tanka);
+            Controls.Add(no2syouhin);
+            Controls.Add(graphno2);
+            Controls.Add(goukeilabel);
+            Controls.Add(goukeitext);
+            Controls.Add(barcodeno);
+            Controls.Add(label1);
             Controls.Add(no1kingaku);
             Controls.Add(no1kazu);
             Controls.Add(no1tanka);
             Controls.Add(no1syouhin);
-            Controls.Add(graphno);
-            Controls.Add(sekinum);
-            Controls.Add(sekininbox);
+            Controls.Add(graphno1);
             Controls.Add(sekiname);
             Controls.Add(postext);
             Controls.Add(b2info);
@@ -353,6 +882,11 @@
             Controls.Add(bff);
             Controls.Add(bhukuro);
             Controls.Add(b2cancel);
+            Controls.Add(no5kingaku);
+            Controls.Add(no5kazu);
+            Controls.Add(no5tanka);
+            Controls.Add(no5syouhin);
+            Controls.Add(graphno5);
             DoubleBuffered = true;
             MaximizeBox = false;
             Name = "Form1";
@@ -394,10 +928,44 @@
         private PictureBox sekininbox;
         private TextBox sekinum;
         public PictureBox b2seki;
-        private Label graphno;
+        private Label graphno1;
         private Label no1syouhin;
-        private Label no1tanka;
         private Label no1kazu;
+        private Label label1;
+        private TextBox barcodeno;
+        private Label goukeilabel;
         private Label no1kingaku;
+        private Label no1tanka;
+        private TextBox goukeitext;
+        private Label no2kingaku;
+        private Label no2kazu;
+        private Label no2tanka;
+        private Label no2syouhin;
+        private Label graphno2;
+        private Label no3kingaku;
+        private Label no3kazu;
+        private Label no3tanka;
+        private Label no3syouhin;
+        private Label graphno3;
+        private Label no4kingaku;
+        private Label no4kazu;
+        private Label no4tanka;
+        private Label no4syouhin;
+        private Label graphno4;
+        private Label no5kingaku;
+        private Label no5kazu;
+        private Label no5tanka;
+        private Label no5syouhin;
+        private Label graphno5;
+        private Label no6kingaku;
+        private Label no6kazu;
+        private Label no6tanka;
+        private Label no6syouhin;
+        private Label graphno6;
+        private Label no7kingaku;
+        private Label no7kazu;
+        private Label no7tanka;
+        private Label no7syouhin;
+        private Label graphno7;
     }
 }
