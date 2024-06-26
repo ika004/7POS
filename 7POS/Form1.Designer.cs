@@ -86,6 +86,13 @@
             no7syouhin = new Label();
             graphno7 = new Label();
             goukeitext = new Label();
+            paymentscr = new PictureBox();
+            paybarcode = new PictureBox();
+            paynanaco = new PictureBox();
+            paycash = new PictureBox();
+            payother = new PictureBox();
+            Paycredit = new PictureBox();
+            Payic = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)b2seki).BeginInit();
             ((System.ComponentModel.ISupportInitialize)b2ryou).BeginInit();
             ((System.ComponentModel.ISupportInitialize)b2turi).BeginInit();
@@ -95,6 +102,13 @@
             ((System.ComponentModel.ISupportInitialize)b2zeiku).BeginInit();
             ((System.ComponentModel.ISupportInitialize)b2info).BeginInit();
             ((System.ComponentModel.ISupportInitialize)sekininbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)paymentscr).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)paybarcode).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)paynanaco).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)paycash).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)payother).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Paycredit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Payic).BeginInit();
             SuspendLayout();
             // 
             // bhukuro
@@ -174,6 +188,7 @@
             // 
             // b2seki
             // 
+            b2seki.BackColor = Color.White;
             b2seki.Image = Properties.Resources.b1;
             b2seki.Location = new Point(1229, 651);
             b2seki.Name = "b2seki";
@@ -185,6 +200,7 @@
             // 
             // b2ryou
             // 
+            b2ryou.BackColor = Color.White;
             b2ryou.Image = Properties.Resources.b2;
             b2ryou.Location = new Point(1229, 543);
             b2ryou.Name = "b2ryou";
@@ -195,6 +211,7 @@
             // 
             // b2turi
             // 
+            b2turi.BackColor = Color.White;
             b2turi.Image = Properties.Resources.b3;
             b2turi.Location = new Point(1230, 435);
             b2turi.Name = "b2turi";
@@ -215,6 +232,7 @@
             // 
             // b2baika
             // 
+            b2baika.BackColor = Color.White;
             b2baika.Image = Properties.Resources.b5;
             b2baika.Location = new Point(1343, 651);
             b2baika.Name = "b2baika";
@@ -225,6 +243,7 @@
             // 
             // b2cancel
             // 
+            b2cancel.BackColor = Color.White;
             b2cancel.Image = Properties.Resources.b6;
             b2cancel.Location = new Point(1453, 648);
             b2cancel.Name = "b2cancel";
@@ -235,6 +254,7 @@
             // 
             // b2zeiku
             // 
+            b2zeiku.BackColor = Color.White;
             b2zeiku.Image = Properties.Resources.b7;
             b2zeiku.Location = new Point(1458, 542);
             b2zeiku.Name = "b2zeiku";
@@ -245,6 +265,7 @@
             // 
             // b2info
             // 
+            b2info.BackColor = Color.White;
             b2info.Image = Properties.Resources.b8;
             b2info.Location = new Point(1576, 651);
             b2info.Name = "b2info";
@@ -278,7 +299,7 @@
             // sekininbox
             // 
             sekininbox.Image = Properties.Resources.sekinin;
-            sekininbox.Location = new Point(65, 338);
+            sekininbox.Location = new Point(63, 338);
             sekininbox.Name = "sekininbox";
             sekininbox.Size = new Size(888, 95);
             sekininbox.SizeMode = PictureBoxSizeMode.Zoom;
@@ -341,6 +362,7 @@
             // 
             // barcodeno
             // 
+            barcodeno.AllowDrop = true;
             barcodeno.Location = new Point(887, 713);
             barcodeno.Name = "barcodeno";
             barcodeno.Size = new Size(127, 23);
@@ -575,9 +597,7 @@
             no5kingaku.Name = "no5kingaku";
             no5kingaku.Size = new Size(132, 34);
             no5kingaku.TabIndex = 47;
-            no5kingaku.Text = "0";
             no5kingaku.TextAlign = ContentAlignment.MiddleCenter;
-            no5kingaku.Visible = false;
             // 
             // no5kazu
             // 
@@ -587,10 +607,8 @@
             no5kazu.Location = new Point(640, 338);
             no5kazu.Name = "no5kazu";
             no5kazu.RightToLeft = RightToLeft.Yes;
-            no5kazu.Size = new Size(32, 34);
+            no5kazu.Size = new Size(0, 34);
             no5kazu.TabIndex = 46;
-            no5kazu.Text = "1";
-            no5kazu.Visible = false;
             // 
             // no5tanka
             // 
@@ -605,7 +623,6 @@
             no5tanka.Size = new Size(126, 38);
             no5tanka.TabIndex = 45;
             no5tanka.TextAlign = ContentAlignment.MiddleCenter;
-            no5tanka.Visible = false;
             // 
             // no5syouhin
             // 
@@ -639,9 +656,7 @@
             no6kingaku.Name = "no6kingaku";
             no6kingaku.Size = new Size(132, 34);
             no6kingaku.TabIndex = 52;
-            no6kingaku.Text = "0";
             no6kingaku.TextAlign = ContentAlignment.MiddleCenter;
-            no6kingaku.Visible = false;
             // 
             // no6kazu
             // 
@@ -651,10 +666,8 @@
             no6kazu.Location = new Point(640, 386);
             no6kazu.Name = "no6kazu";
             no6kazu.RightToLeft = RightToLeft.Yes;
-            no6kazu.Size = new Size(32, 34);
+            no6kazu.Size = new Size(0, 34);
             no6kazu.TabIndex = 51;
-            no6kazu.Text = "1";
-            no6kazu.Visible = false;
             // 
             // no6tanka
             // 
@@ -668,9 +681,7 @@
             no6tanka.RightToLeft = RightToLeft.Yes;
             no6tanka.Size = new Size(126, 38);
             no6tanka.TabIndex = 50;
-            no6tanka.Text = "0";
             no6tanka.TextAlign = ContentAlignment.MiddleCenter;
-            no6tanka.Visible = false;
             // 
             // no6syouhin
             // 
@@ -680,10 +691,8 @@
             no6syouhin.Location = new Point(95, 386);
             no6syouhin.Name = "no6syouhin";
             no6syouhin.RightToLeft = RightToLeft.Yes;
-            no6syouhin.Size = new Size(72, 34);
+            no6syouhin.Size = new Size(0, 34);
             no6syouhin.TabIndex = 49;
-            no6syouhin.Text = "test";
-            no6syouhin.Visible = false;
             // 
             // graphno6
             // 
@@ -692,10 +701,8 @@
             graphno6.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
             graphno6.Location = new Point(27, 386);
             graphno6.Name = "graphno6";
-            graphno6.Size = new Size(32, 34);
+            graphno6.Size = new Size(0, 34);
             graphno6.TabIndex = 48;
-            graphno6.Text = "6";
-            graphno6.Visible = false;
             // 
             // no7kingaku
             // 
@@ -708,9 +715,7 @@
             no7kingaku.Name = "no7kingaku";
             no7kingaku.Size = new Size(132, 34);
             no7kingaku.TabIndex = 57;
-            no7kingaku.Text = "0";
             no7kingaku.TextAlign = ContentAlignment.MiddleCenter;
-            no7kingaku.Visible = false;
             // 
             // no7kazu
             // 
@@ -720,10 +725,8 @@
             no7kazu.Location = new Point(640, 435);
             no7kazu.Name = "no7kazu";
             no7kazu.RightToLeft = RightToLeft.Yes;
-            no7kazu.Size = new Size(32, 34);
+            no7kazu.Size = new Size(0, 34);
             no7kazu.TabIndex = 56;
-            no7kazu.Text = "1";
-            no7kazu.Visible = false;
             // 
             // no7tanka
             // 
@@ -737,9 +740,7 @@
             no7tanka.RightToLeft = RightToLeft.Yes;
             no7tanka.Size = new Size(126, 38);
             no7tanka.TabIndex = 55;
-            no7tanka.Text = "0";
             no7tanka.TextAlign = ContentAlignment.MiddleCenter;
-            no7tanka.Visible = false;
             // 
             // no7syouhin
             // 
@@ -749,10 +750,8 @@
             no7syouhin.Location = new Point(95, 435);
             no7syouhin.Name = "no7syouhin";
             no7syouhin.RightToLeft = RightToLeft.Yes;
-            no7syouhin.Size = new Size(72, 34);
+            no7syouhin.Size = new Size(0, 34);
             no7syouhin.TabIndex = 54;
-            no7syouhin.Text = "test";
-            no7syouhin.Visible = false;
             // 
             // graphno7
             // 
@@ -761,10 +760,8 @@
             graphno7.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
             graphno7.Location = new Point(27, 435);
             graphno7.Name = "graphno7";
-            graphno7.Size = new Size(32, 34);
+            graphno7.Size = new Size(0, 34);
             graphno7.TabIndex = 53;
-            graphno7.Text = "7";
-            graphno7.Visible = false;
             // 
             // goukeitext
             // 
@@ -781,6 +778,82 @@
             goukeitext.TextAlign = ContentAlignment.MiddleRight;
             goukeitext.Visible = false;
             // 
+            // paymentscr
+            // 
+            paymentscr.Image = Properties.Resources.gamenv1;
+            paymentscr.Location = new Point(3, 30000);
+            paymentscr.Name = "paymentscr";
+            paymentscr.Size = new Size(1016, 734);
+            paymentscr.SizeMode = PictureBoxSizeMode.Zoom;
+            paymentscr.TabIndex = 59;
+            paymentscr.TabStop = false;
+            // 
+            // paybarcode
+            // 
+            paybarcode.BackColor = Color.White;
+            paybarcode.Image = Properties.Resources.barcode;
+            paybarcode.Location = new Point(27, 30000);
+            paybarcode.Name = "paybarcode";
+            paybarcode.Size = new Size(320, 233);
+            paybarcode.SizeMode = PictureBoxSizeMode.Zoom;
+            paybarcode.TabIndex = 60;
+            paybarcode.TabStop = false;
+            // 
+            // paynanaco
+            // 
+            paynanaco.BackColor = Color.White;
+            paynanaco.Image = Properties.Resources.nanaco;
+            paynanaco.Location = new Point(340, 30000);
+            paynanaco.Name = "paynanaco";
+            paynanaco.Size = new Size(340, 260);
+            paynanaco.SizeMode = PictureBoxSizeMode.Zoom;
+            paynanaco.TabIndex = 61;
+            paynanaco.TabStop = false;
+            // 
+            // paycash
+            // 
+            paycash.BackColor = Color.White;
+            paycash.Image = Properties.Resources.cash;
+            paycash.Location = new Point(665, 30000);
+            paycash.Name = "paycash";
+            paycash.Size = new Size(325, 238);
+            paycash.SizeMode = PictureBoxSizeMode.Zoom;
+            paycash.TabIndex = 62;
+            paycash.TabStop = false;
+            // 
+            // payother
+            // 
+            payother.BackColor = Color.White;
+            payother.Image = Properties.Resources.other;
+            payother.Location = new Point(24, 30000);
+            payother.Name = "payother";
+            payother.Size = new Size(325, 238);
+            payother.SizeMode = PictureBoxSizeMode.Zoom;
+            payother.TabIndex = 63;
+            payother.TabStop = false;
+            // 
+            // Paycredit
+            // 
+            Paycredit.BackColor = Color.White;
+            Paycredit.Image = Properties.Resources.credit;
+            Paycredit.Location = new Point(339, 30000);
+            Paycredit.Name = "Paycredit";
+            Paycredit.Size = new Size(335, 252);
+            Paycredit.SizeMode = PictureBoxSizeMode.Zoom;
+            Paycredit.TabIndex = 64;
+            Paycredit.TabStop = false;
+            // 
+            // Payic
+            // 
+            Payic.BackColor = Color.White;
+            Payic.Image = Properties.Resources.ic;
+            Payic.Location = new Point(660, 30000);
+            Payic.Name = "Payic";
+            Payic.Size = new Size(325, 238);
+            Payic.SizeMode = PictureBoxSizeMode.Zoom;
+            Payic.TabIndex = 65;
+            Payic.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(96F, 96F);
@@ -789,6 +862,13 @@
             BackgroundImage = Properties.Resources.MainScreen4;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1802, 765);
+            Controls.Add(Payic);
+            Controls.Add(Paycredit);
+            Controls.Add(payother);
+            Controls.Add(paycash);
+            Controls.Add(paynanaco);
+            Controls.Add(paybarcode);
+            Controls.Add(paymentscr);
             Controls.Add(goukeitext);
             Controls.Add(sekinum);
             Controls.Add(sekininbox);
@@ -849,6 +929,8 @@
             Controls.Add(graphno5);
             DoubleBuffered = true;
             MaximizeBox = false;
+            MaximumSize = new Size(1818, 804);
+            MinimumSize = new Size(1818, 804);
             Name = "Form1";
             SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
@@ -863,6 +945,13 @@
             ((System.ComponentModel.ISupportInitialize)b2zeiku).EndInit();
             ((System.ComponentModel.ISupportInitialize)b2info).EndInit();
             ((System.ComponentModel.ISupportInitialize)sekininbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)paymentscr).EndInit();
+            ((System.ComponentModel.ISupportInitialize)paybarcode).EndInit();
+            ((System.ComponentModel.ISupportInitialize)paynanaco).EndInit();
+            ((System.ComponentModel.ISupportInitialize)paycash).EndInit();
+            ((System.ComponentModel.ISupportInitialize)payother).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Paycredit).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Payic).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -927,5 +1016,12 @@
         private Label no7syouhin;
         private Label graphno7;
         private Label goukeitext;
+        private PictureBox paymentscr;
+        private PictureBox paybarcode;
+        private PictureBox paynanaco;
+        private PictureBox paycash;
+        private PictureBox payother;
+        private PictureBox Paycredit;
+        private PictureBox Payic;
     }
 }
