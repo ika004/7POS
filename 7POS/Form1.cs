@@ -43,7 +43,7 @@ namespace _7POS
         }
         void bckakunin() //バーコードの番号と商品一覧
         {
-            switch(barcodeno.Text)
+            switch (barcodeno.Text)
             {
                 case "00410":
                     tourokuname = "トマト";
@@ -55,13 +55,13 @@ namespace _7POS
                     tanka = 150;
                     syouhintouroku();
                     break;
-                
+
                 default:
                     pi.Play();
                     break;
 
             }
-            
+
             barcodeno.Text = null;
         }
         void touroku()//登録時の合計金額の計算
@@ -75,17 +75,16 @@ namespace _7POS
         }
         void syouhintouroku()//登録画面のグラフに商品名などを追加する。スパゲッティコード。
         {
-           switch (tourokuno)
+            switch (tourokuno)
             {
                 case 1:
-                    no1kazu.Visible = true;
-                    no1kingaku.Visible = true;
-                    no1syouhin.Visible = true;
-                    no1tanka.Visible = true;
+                    //no1kazu.Visible = true;
+                    //no1kingaku.Visible = true;
+                    //  no1syouhin.Visible = true;
+                    //no1tanka.Visible = true;
                     goukeitext.Visible = true;
                     goukeilabel.Visible = true;
-                    graphno1.Visible = true;
-
+                    graphno1.Text = tourokuno.ToString();
 
                     no1kazu.Text = "1";
                     no1syouhin.Text = tourokuname;
@@ -94,12 +93,13 @@ namespace _7POS
                     touroku();
                     break;
 
-                    case 2:
-                    no2kazu.Visible = true;
-                    no2kingaku.Visible = true;
-                    no2syouhin.Visible = true;
-                    no2tanka.Visible = true;
-                    graphno2.Visible = true;
+                case 2:
+                    //no2kazu.Visible = true;
+                    //no2kingaku.Visible = true;
+                    //no2syouhin.Visible = true;
+                    //no2tanka.Visible = true;
+                    //graphno2.Visible = true;
+                    graphno2.Text = tourokuno.ToString();
 
 
                     no2kazu.Text = "1";
@@ -109,12 +109,15 @@ namespace _7POS
                     touroku();
                     break;
                 case 3:
+                    /*
                     no3kazu.Visible = true;
                     no3kingaku.Visible = true;
                     no3syouhin.Visible = true;
                     no3tanka.Visible = true;
                     graphno3.Visible = true;
+                    */
 
+                    graphno3.Text = tourokuno.ToString();
 
                     no3kazu.Text = "1";
                     no3syouhin.Text = tourokuname;
@@ -122,12 +125,15 @@ namespace _7POS
                     no3kingaku.Text = tanka.ToString();
                     touroku();
                     break;
-                    case 4:
+                case 4:
+                    /*
                     no4kazu.Visible = true;
                     no4kingaku.Visible = true;
                     no4syouhin.Visible = true;
                     no4tanka.Visible = true;
                     graphno4.Visible = true;
+                    */
+                    graphno4.Text = tourokuno.ToString();
 
 
                     no4kazu.Text = "1";
@@ -137,12 +143,14 @@ namespace _7POS
                     touroku();
                     break;
                 case 5:
+                    graphno5.Text = tourokuno.ToString();
+                    /*
                     no5kazu.Visible = true;
                     no5kingaku.Visible = true;
                     no5syouhin.Visible = true;
                     no5tanka.Visible = true;
                     graphno5.Visible = true;
-
+                    */
 
                     no5kazu.Text = "1";
                     no5syouhin.Text = tourokuname;
@@ -151,12 +159,14 @@ namespace _7POS
                     touroku();
                     break;
                 case 6:
+                    graphno6.Text = tourokuno.ToString();
+                    /*
                     no6kazu.Visible = true;
                     no6kingaku.Visible = true;
                     no6syouhin.Visible = true;
                     no6tanka.Visible = true;
                     graphno6.Visible = true;
-
+                    */
 
                     no6kazu.Text = "1";
                     no6syouhin.Text = tourokuname;
@@ -165,12 +175,14 @@ namespace _7POS
                     touroku();
                     break;
                 case 7:
+                    graphno7.Text = tourokuno.ToString();
+                    /*
                     no7kazu.Visible = true;
                     no7kingaku.Visible = true;
                     no7syouhin.Visible = true;
                     no7tanka.Visible = true;
                     graphno7.Visible = true;
-
+                    */
 
                     no7kazu.Text = "1";
                     no7syouhin.Text = tourokuname;
@@ -242,10 +254,15 @@ namespace _7POS
 
         private void barcodeno_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyData == Keys.Enter)
+            if (e.KeyData == Keys.Enter)
             {
                 bckakunin();
             }
+        }
+
+        private void sekininbox_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

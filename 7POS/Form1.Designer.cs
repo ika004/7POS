@@ -278,18 +278,19 @@
             // sekininbox
             // 
             sekininbox.Image = Properties.Resources.sekinin;
-            sekininbox.Location = new Point(58, 338);
+            sekininbox.Location = new Point(65, 338);
             sekininbox.Name = "sekininbox";
             sekininbox.Size = new Size(888, 95);
             sekininbox.SizeMode = PictureBoxSizeMode.Zoom;
             sekininbox.TabIndex = 17;
             sekininbox.TabStop = false;
+            sekininbox.Click += sekininbox_Click;
             // 
             // sekinum
             // 
             sekinum.BorderStyle = BorderStyle.None;
             sekinum.Font = new Font("ＭＳ Ｐゴシック", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
-            sekinum.Location = new Point(529, 364);
+            sekinum.Location = new Point(534, 365);
             sekinum.Name = "sekinum";
             sekinum.RightToLeft = RightToLeft.Yes;
             sekinum.Size = new Size(398, 37);
@@ -303,10 +304,8 @@
             graphno1.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
             graphno1.Location = new Point(27, 139);
             graphno1.Name = "graphno1";
-            graphno1.Size = new Size(32, 34);
+            graphno1.Size = new Size(0, 34);
             graphno1.TabIndex = 19;
-            graphno1.Text = "1";
-            graphno1.Visible = false;
             // 
             // no1syouhin
             // 
@@ -316,10 +315,9 @@
             no1syouhin.Location = new Point(95, 139);
             no1syouhin.Name = "no1syouhin";
             no1syouhin.RightToLeft = RightToLeft.Yes;
-            no1syouhin.Size = new Size(72, 34);
+            no1syouhin.Size = new Size(0, 37);
             no1syouhin.TabIndex = 20;
-            no1syouhin.Text = "test";
-            no1syouhin.Visible = false;
+            no1syouhin.UseCompatibleTextRendering = true;
             // 
             // no1kazu
             // 
@@ -329,10 +327,8 @@
             no1kazu.Location = new Point(640, 139);
             no1kazu.Name = "no1kazu";
             no1kazu.RightToLeft = RightToLeft.Yes;
-            no1kazu.Size = new Size(32, 34);
+            no1kazu.Size = new Size(0, 34);
             no1kazu.TabIndex = 22;
-            no1kazu.Text = "1";
-            no1kazu.Visible = false;
             // 
             // label1
             // 
@@ -362,6 +358,7 @@
             goukeilabel.Size = new Size(103, 33);
             goukeilabel.TabIndex = 26;
             goukeilabel.Text = "合　計";
+            goukeilabel.Visible = false;
             // 
             // no1kingaku
             // 
@@ -374,9 +371,7 @@
             no1kingaku.Name = "no1kingaku";
             no1kingaku.Size = new Size(132, 34);
             no1kingaku.TabIndex = 23;
-            no1kingaku.Text = "0";
             no1kingaku.TextAlign = ContentAlignment.MiddleCenter;
-            no1kingaku.Visible = false;
             // 
             // no1tanka
             // 
@@ -390,9 +385,7 @@
             no1tanka.RightToLeft = RightToLeft.Yes;
             no1tanka.Size = new Size(126, 38);
             no1tanka.TabIndex = 21;
-            no1tanka.Text = "0";
             no1tanka.TextAlign = ContentAlignment.MiddleCenter;
-            no1tanka.Visible = false;
             // 
             // no2kingaku
             // 
@@ -405,9 +398,7 @@
             no2kingaku.Name = "no2kingaku";
             no2kingaku.Size = new Size(132, 34);
             no2kingaku.TabIndex = 32;
-            no2kingaku.Text = "0";
             no2kingaku.TextAlign = ContentAlignment.MiddleCenter;
-            no2kingaku.Visible = false;
             // 
             // no2kazu
             // 
@@ -417,10 +408,8 @@
             no2kazu.Location = new Point(640, 190);
             no2kazu.Name = "no2kazu";
             no2kazu.RightToLeft = RightToLeft.Yes;
-            no2kazu.Size = new Size(32, 34);
+            no2kazu.Size = new Size(0, 34);
             no2kazu.TabIndex = 31;
-            no2kazu.Text = "1";
-            no2kazu.Visible = false;
             // 
             // no2tanka
             // 
@@ -434,9 +423,7 @@
             no2tanka.RightToLeft = RightToLeft.Yes;
             no2tanka.Size = new Size(126, 38);
             no2tanka.TabIndex = 30;
-            no2tanka.Text = "0";
             no2tanka.TextAlign = ContentAlignment.MiddleCenter;
-            no2tanka.Visible = false;
             // 
             // no2syouhin
             // 
@@ -446,10 +433,8 @@
             no2syouhin.Location = new Point(95, 190);
             no2syouhin.Name = "no2syouhin";
             no2syouhin.RightToLeft = RightToLeft.Yes;
-            no2syouhin.Size = new Size(72, 34);
+            no2syouhin.Size = new Size(0, 34);
             no2syouhin.TabIndex = 29;
-            no2syouhin.Text = "test";
-            no2syouhin.Visible = false;
             // 
             // graphno2
             // 
@@ -458,10 +443,8 @@
             graphno2.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
             graphno2.Location = new Point(27, 190);
             graphno2.Name = "graphno2";
-            graphno2.Size = new Size(32, 34);
+            graphno2.Size = new Size(0, 34);
             graphno2.TabIndex = 28;
-            graphno2.Text = "2";
-            graphno2.Visible = false;
             // 
             // no3kingaku
             // 
@@ -474,9 +457,7 @@
             no3kingaku.Name = "no3kingaku";
             no3kingaku.Size = new Size(132, 34);
             no3kingaku.TabIndex = 37;
-            no3kingaku.Text = "0";
             no3kingaku.TextAlign = ContentAlignment.MiddleCenter;
-            no3kingaku.Visible = false;
             // 
             // no3kazu
             // 
@@ -486,10 +467,8 @@
             no3kazu.Location = new Point(640, 240);
             no3kazu.Name = "no3kazu";
             no3kazu.RightToLeft = RightToLeft.Yes;
-            no3kazu.Size = new Size(32, 34);
+            no3kazu.Size = new Size(0, 34);
             no3kazu.TabIndex = 36;
-            no3kazu.Text = "1";
-            no3kazu.Visible = false;
             // 
             // no3tanka
             // 
@@ -503,9 +482,7 @@
             no3tanka.RightToLeft = RightToLeft.Yes;
             no3tanka.Size = new Size(126, 38);
             no3tanka.TabIndex = 35;
-            no3tanka.Text = "0";
             no3tanka.TextAlign = ContentAlignment.MiddleCenter;
-            no3tanka.Visible = false;
             // 
             // no3syouhin
             // 
@@ -515,10 +492,8 @@
             no3syouhin.Location = new Point(95, 240);
             no3syouhin.Name = "no3syouhin";
             no3syouhin.RightToLeft = RightToLeft.Yes;
-            no3syouhin.Size = new Size(72, 34);
+            no3syouhin.Size = new Size(0, 34);
             no3syouhin.TabIndex = 34;
-            no3syouhin.Text = "test";
-            no3syouhin.Visible = false;
             // 
             // graphno3
             // 
@@ -527,10 +502,8 @@
             graphno3.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
             graphno3.Location = new Point(27, 240);
             graphno3.Name = "graphno3";
-            graphno3.Size = new Size(32, 34);
+            graphno3.Size = new Size(0, 34);
             graphno3.TabIndex = 33;
-            graphno3.Text = "3";
-            graphno3.Visible = false;
             // 
             // no4kingaku
             // 
@@ -543,9 +516,7 @@
             no4kingaku.Name = "no4kingaku";
             no4kingaku.Size = new Size(132, 34);
             no4kingaku.TabIndex = 42;
-            no4kingaku.Text = "0";
             no4kingaku.TextAlign = ContentAlignment.MiddleCenter;
-            no4kingaku.Visible = false;
             // 
             // no4kazu
             // 
@@ -555,10 +526,8 @@
             no4kazu.Location = new Point(640, 289);
             no4kazu.Name = "no4kazu";
             no4kazu.RightToLeft = RightToLeft.Yes;
-            no4kazu.Size = new Size(32, 34);
+            no4kazu.Size = new Size(0, 34);
             no4kazu.TabIndex = 41;
-            no4kazu.Text = "1";
-            no4kazu.Visible = false;
             // 
             // no4tanka
             // 
@@ -572,9 +541,7 @@
             no4tanka.RightToLeft = RightToLeft.Yes;
             no4tanka.Size = new Size(126, 38);
             no4tanka.TabIndex = 40;
-            no4tanka.Text = "0";
             no4tanka.TextAlign = ContentAlignment.MiddleCenter;
-            no4tanka.Visible = false;
             // 
             // no4syouhin
             // 
@@ -584,10 +551,8 @@
             no4syouhin.Location = new Point(95, 289);
             no4syouhin.Name = "no4syouhin";
             no4syouhin.RightToLeft = RightToLeft.Yes;
-            no4syouhin.Size = new Size(72, 34);
+            no4syouhin.Size = new Size(0, 34);
             no4syouhin.TabIndex = 39;
-            no4syouhin.Text = "test";
-            no4syouhin.Visible = false;
             // 
             // graphno4
             // 
@@ -596,10 +561,8 @@
             graphno4.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
             graphno4.Location = new Point(27, 289);
             graphno4.Name = "graphno4";
-            graphno4.Size = new Size(32, 34);
+            graphno4.Size = new Size(0, 34);
             graphno4.TabIndex = 38;
-            graphno4.Text = "4";
-            graphno4.Visible = false;
             // 
             // no5kingaku
             // 
@@ -641,7 +604,6 @@
             no5tanka.RightToLeft = RightToLeft.Yes;
             no5tanka.Size = new Size(126, 38);
             no5tanka.TabIndex = 45;
-            no5tanka.Text = "0";
             no5tanka.TextAlign = ContentAlignment.MiddleCenter;
             no5tanka.Visible = false;
             // 
@@ -653,10 +615,8 @@
             no5syouhin.Location = new Point(95, 338);
             no5syouhin.Name = "no5syouhin";
             no5syouhin.RightToLeft = RightToLeft.Yes;
-            no5syouhin.Size = new Size(72, 34);
+            no5syouhin.Size = new Size(0, 34);
             no5syouhin.TabIndex = 44;
-            no5syouhin.Text = "test";
-            no5syouhin.Visible = false;
             // 
             // graphno5
             // 
@@ -665,10 +625,8 @@
             graphno5.Font = new Font("ＭＳ Ｐゴシック", 25F, FontStyle.Regular, GraphicsUnit.Point);
             graphno5.Location = new Point(27, 338);
             graphno5.Name = "graphno5";
-            graphno5.Size = new Size(32, 34);
+            graphno5.Size = new Size(0, 34);
             graphno5.TabIndex = 43;
-            graphno5.Text = "5";
-            graphno5.Visible = false;
             // 
             // no6kingaku
             // 
