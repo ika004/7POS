@@ -43,7 +43,7 @@ namespace _7POS
             tourokuno = 1;
             textkousin();
         }
-        async void bckakunin() //バーコードの番号と商品一覧
+         void bckakunin() //バーコードの番号と商品一覧
         {
             switch (barcodeno.Text)
             {
