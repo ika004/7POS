@@ -146,6 +146,14 @@ namespace _7POS
             no7tanka.Visible = false;
             graphno7.Visible = false;
 
+            paymentscr.Visible = false;
+            paybarcode.Visible = false;
+            paynanaco.Visible = false;
+            paycash.Visible = false;
+            payother.Visible = false;
+            Paycredit.Visible = false;
+            Payic.Visible = false   ;
+
         }
         void syouhintouroku()//登録画面のグラフに商品名などを追加する。スパゲッティコード。
         {
@@ -300,7 +308,14 @@ namespace _7POS
             payother.Location = new Point(24, 362);
             Paycredit.Location = new Point(339, 354);
             Payic.Location = new Point(660, 357);
-            
+            paymentscr.Visible = true;
+            paybarcode.Visible = true;
+            paynanaco.Visible = true;
+            paycash.Visible = true;
+            payother.Visible = true;
+            Paycredit.Visible = true;
+            Payic.Visible = true;
+
         }
 
         private void b2seki_Click(object sender, EventArgs e)
